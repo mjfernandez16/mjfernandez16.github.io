@@ -5,6 +5,14 @@
 */
 
 (function($) {
+	
+	$(document).ready(function() {
+		$('.template-article img').each(function() {
+			var currentImage = $(this);
+			currentImage.wrap("<a class='image-link' href='" + currentImage.attr("src") + "'</a>");
+		});
+		$('.image-link').magnificPopup({type:'image'});  
+	  });
 
 	var	$window = $(window),
 		$body = $('body'),
@@ -109,6 +117,8 @@
 		return $(this);
 
 	};
+
+
 
 	// Play initial animations on page load.
 		$window.on('load', function() {

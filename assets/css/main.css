@@ -2618,6 +2618,17 @@ input, select, textarea {
 			top: 0.75rem;
 		}
 
+		.image.fix {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 150px;
+			margin-top: 2.5rem;
+			margin-bottom: 3rem;
+			border: 1px solid #6d6d6d60;
+			border-radius: 20%;
+		}
+
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
@@ -3234,7 +3245,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3276,7 +3287,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto,								auto,														auto 150%;
 			}
 
 		}
@@ -3285,7 +3296,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 4rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3306,7 +3317,7 @@ input, select, textarea {
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		position: relative;
+		position: static;
 		cursor: default;
 		text-align: center;
 		z-index: 1;
@@ -3779,7 +3790,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 3rem 8rem 3rem 8rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -3799,7 +3810,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
+					padding: 4rem 4rem 4rem 4rem ;
 				}
 
 			}
@@ -3807,7 +3818,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 3rem 2rem 2rem 2rem ;
 				}
 
 					#main > .post header.major > .date {
