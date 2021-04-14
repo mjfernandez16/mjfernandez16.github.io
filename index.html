@@ -9,7 +9,11 @@
 		<title>MJ</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/details.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/lightbox.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -51,7 +55,8 @@
 									<!-- <h2><a href="#">Howdy!</a></h2> -->
 									<p>Hey there, My name is Michael but you can call me "MJ/Mike". <br />I'm a mobile developer who likes to make apps for iOS, iPadOS and Android. <br /><br /> When I’m away from the keyboard, I also do a little photography.</p>
 								</header>
-								<img src="images/mainpic.jpg" alt="Drone Photography" class="image fit">
+								<img src="images/mainpic.jpg" alt="Drone Photography" class="image fit" >
+								
 								<!-- <ul class="actions special"> -->
 								</ul>
 							</article>
@@ -66,19 +71,19 @@
 									</header>
 									<img src="images/Projects/rc_logo.png" alt="" class="image fix" />
 									<p>A Japan residence card reader application that uses NFC to read user data...</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">details</a></li>
+									<ul class="actions special">							
+										<li><button onclick="document.getElementById('modal01').style.display='block'">details</button></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										<span class="date">Nov 2019</span>
-										<h2><a href="#">PowerspotSync App<br /></a></h2>
+										<h2>PowerspotSync App</h2>
 									</header>
 									<img src="images/Projects/ps_logo.png" alt="" class="image fix" />
 									<p>An app which uses Bluetooth to control an external device(self-heating mug). It can send and receive temperature updates to and from the external device...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">details</a></li>
+										<li><button onclick="document.getElementById('modal02').style.display='block'">details</button></li>
 									</ul>
 								</article>
 								<article>
@@ -89,7 +94,7 @@
 									<img class="image fix" src="images/Projects/kot_logo.png" alt="" />
 									<p>An app that uses device location to clockIn/clockOut of the employee's assigned location/office...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">details</a></li>
+										<li><button onclick="document.getElementById('modal03').style.display='block'">details</button></li>
 									</ul>
 								</article>
 								<article>
@@ -100,7 +105,7 @@
 									<img class="image fix" src="images/Projects/ac_logo.png" alt="" />
 									<p>An ecommerce app (iOS and android) wherein user get to buy action figures or collectibles... </p>
 									<ul class="actions special">
-										<li><a href="#" class="button">details</a></li>
+										<li><button onclick="document.getElementById('modal04').style.display='block'">details</button></li>
 									</ul>
 								</article>
 								<article>
@@ -111,7 +116,7 @@
 									<img class="image fix" src="images/Projects/mtlrs_logo.png" alt="" />
 									<p>An app that allows company employees to automatically badge-in and badge-out for their time logs based on user location...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Details</a></li>
+										<li><button onclick="document.getElementById('modal05').style.display='block'">details</button></li>
 									</ul>
 								</article>
 								<article>
@@ -122,12 +127,222 @@
 									<img class="image fix" src="images/Projects/ensign_logo.jpg" alt="" />
 									<p>An iOS app for paperless document signing. You are able to create your own signature and use it for signing...</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Details</a></li>
+										<li><button onclick="document.getElementById('modal06').style.display='block'">details</button></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">March 2017</span>
+										<h2>会社のお知らせ</h2>
+									</header>
+									<img class="image fix" src="images/Projects/oshirase_logo.png" alt="" />
+									<p>An app used for internal company announcements or messages to their employees...</p>
+									<ul class="actions special">
+										<li><button onclick="document.getElementById('modal07').style.display='block'">details</button></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 2016</span>
+										<h2>drivit</h2>
+									</header>
+									<img class="image fix" src="images/Projects/drivit_logo.png" alt="" />
+									<p>An iOS app for paperless document signing. You are able to create your own signature and use it for signing...</p>
+									<ul class="actions special">
+										<li><button onclick="document.getElementById('modal08').style.display='block'">details</button></li>
 									</ul>
 								</article>
 							</section>
 
 					</div>
+
+					<!-- Residence Card Reader -->
+					<div id="modal01" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:1000px; border-radius:10px">
+						  <div class="w3-center"><br>
+							<span onclick="document.getElementById('modal01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+							
+						  </div>
+						  <article id="rc">
+							  <header>
+								<span class="date">Nov 2020 - Present</span>
+								<h2 class="major">RESIDENCE CARD READER</h2>
+							  </header>
+								<!-- <a href="images/mockup/ac_mock.jpg" data-lightbox="ac_mock"><img src="images/mockup/ac_mock.jpg" class="image fit" ></a> -->
+							<p>A Japan residence card reader application that uses NFC to read user data. App is already fully functional when turned over to me.</p>
+							<i class="fa fa-desktop" aria-hidden="true"></i> <span class="title-bold">Tool / Tech / Language:</span>  Swift, CoreNFC, Java Android, Git, Alamofire<br/>
+							
+							<i class="fa fa-code-fork" aria-hidden="true" ></i> <span class="title-bold">Contribution:</span>  30%
+							<ul>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Requirements Specification Analysis for creation of Estimates file and Work Breakdown Structure.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Added functions for verifying if card is valid and untampered.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Work with Bridge engineers to provide project reports to client.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Deployment to Testflight for client UAT.</li>
+							</ul>
+							<i class="fa fa-user" aria-hidden="true" ></i> <span class="title-bold">Member/s:</span> 1 &nbsp; &nbsp; <span class="title-bold">Role:</span> Developer/Project Manager<br/>
+							<i class="fa fa-apple" aria-hidden="true" ></i>
+							<i class="fa fa-android" aria-hidden="true" ></i>
+						</article>
+					
+						</div>
+					  </div>
+
+					<!-- PowerSpot -->
+					<div id="modal02" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:1000px; border-radius:10px">
+						  <div class="w3-center"><br>
+							<span onclick="document.getElementById('modal02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+							
+						  </div>
+						  <article id="rc">
+							  <header>
+									<span class="date">Nov 2019 - Dec 2020</span>
+									<h2 class="major">PowerspotSync App</h2>
+								</header>
+							<a href="images/mockup/ps_mock.jpg" data-lightbox="ps_mock"><img src="images/mockup/ps_mock.jpg" class="image fit" ></a>
+
+							<p>An app which uses Bluetooth to control an external device(self-heating mug). It can send and receive temperature updates to and from the external device.</p>
+							<i class="fa fa-desktop" aria-hidden="true"></i> <span class="title-bold">Tool / Tech / Language:</span>  Swift, SwiftUI, CoreBluetooth, Git, AWS-EC2(server), Laravel<br/>
+							
+							<i class="fa fa-code-fork" aria-hidden="true" ></i> <span class="title-bold">Contribution:</span>  50%
+							<ul>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Requirements Specification Analysis and performed R&D for Bluetooth which resulted to obtaining the project.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Creation of Estimates and Work Breakdown Structure.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Implementation of most of the Bluetooth-related functions.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> AWS EC2 server creation and initial setup for API.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Work with Bridge engineers to provide project reports to client.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Deployment to Testflight for client UAT.</li>
+							</ul>
+							<i class="fa fa-user" aria-hidden="true" ></i> <span class="title-bold">Member/s:</span> 4 &nbsp; &nbsp; <span class="title-bold">Role:</span> Project Lead / Developer / Project Management Assistance<br/>
+							<i class="fa fa-apple" aria-hidden="true" ></i>
+							<!-- <i class="fa fa-android" aria-hidden="true" ></i> -->
+						</article>
+						</div>
+					  </div>
+
+					  <!-- King of time -->
+					<div id="modal03" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:1000px; border-radius:10px">
+						  <div class="w3-center"><br>
+							<span onclick="document.getElementById('modal03').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+							
+						  </div>
+						  <article id="rc">
+							<header>
+								<span class="date">Oct 2018 - April 2019</span>
+								<h2 class="major">King of Time</h2>
+							</header>
+							<a href="images/mockup/kot_mock.jpg" data-lightbox="kot_mock"><img src="images/mockup/kot_mock.jpg" class="image fit" ></a>
+
+							<p> An application (iOS and android) that can be used by companies to let their employees time in and out as long as they are within the premises of the company or set location. </p>
+							<i class="fa fa-desktop" aria-hidden="true"></i> <span class="title-bold">Tool / Tech / Language:</span>  NativeScript, GeoLocation, Git<br/>
+							
+							<i class="fa fa-code-fork" aria-hidden="true" ></i> <span class="title-bold">Contribution:</span> 40%
+							<ul>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Requirements Specification Analysis and Creation of Estimates and Work Breakdown Structure. </li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Initial implementation for project structure.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Code review and testing.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Provide project reports to client.</li>
+							</ul>
+							<i class="fa fa-user" aria-hidden="true" ></i> <span class="title-bold">Member/s:</span> 2 &nbsp; &nbsp; <span class="title-bold">Role:</span> Project Lead / Project Management Assistance<br/>
+							<a href="https://apps.apple.com/jp/app/gps%E5%8B%A4%E6%80%A0%E7%AE%A1%E7%90%86-for-king-of-time-%E5%BE%93%E6%A5%AD%E5%93%A1%E7%94%A8/id1465684712?itsct=apps_box_link&itscg=30200"><i class="fa fa-apple" aria-hidden="true" ></i></a>
+							<a href="https://play.google.com/store/apps/details?id=com.huubap.clockin.employee&hl=en&gl=US"><i class="fa fa-android" aria-hidden="true" ></i></a>
+						</article>
+						</div>
+					  </div>
+
+					  <!-- ActionCity -->
+					<div id="modal04" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:1000px; border-radius:10px">
+						  <div class="w3-center"><br>
+							<span onclick="document.getElementById('modal04').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+							
+						  </div>
+						  <article id="rc">
+							  <header>
+								<span class="date">June 2018 - Present</span>
+								<h2 class="major">ActionCity</h2>
+							</header>
+							<a href="images/mockup/ac_mock.jpg" data-lightbox="ac_mock"><img src="images/mockup/ac_mock.jpg" class="image fit" ></a>
+
+							<p>An ecommerce app wherein users get to buy action figures or collectibles.
+								Users can then check items' details and availability, and when they buy action figures, they can have it delivered to them, or pick them on a specific ActionCity store. 
+								App can also handle payments using in-app currency which can be topped up via different online payment services. It was later on updated to handle c2c transactions. </p>
+							<i class="fa fa-desktop" aria-hidden="true"></i> <span class="title-bold">Tool / Tech / Language:</span>  Objective-C, Swift, Java Android, Laravel API Server, Git, Braintree, MessageUI<br/>
+							
+							<i class="fa fa-code-fork" aria-hidden="true" ></i> <span class="title-bold">Contribution:</span> 40%
+							<ul>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Requirements Specification Analysis and Creation of Estimates and Work Breakdown Structure. </li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Able to be sent to Singapore for major app upgrade discussion with client.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Assist in both iOS and Android app implementation.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Code review and testing of both iOS and Android.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Report directly to project manager for project status and concerns.</li>
+							</ul>
+							<i class="fa fa-user" aria-hidden="true" ></i> <span class="title-bold">Member/s:</span> 5 &nbsp; &nbsp; <span class="title-bold">Role:</span> Project Lead / Developer<br/>
+							<a href="https://apps.apple.com/sg/app/actioncity/id1067560552"><i class="fa fa-apple" aria-hidden="true" ></i></a>
+							<a href="https://play.google.com/store/apps/details?id=alm_grp.actioncity"><i class="fa fa-android" aria-hidden="true" ></i></a>
+						</article>
+						</div>
+					  </div>
+
+					  <!-- MT-LRS -->
+					<div id="modal05" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:1000px; border-radius:10px">
+						  <div class="w3-center"><br>
+							<span onclick="document.getElementById('modal05').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+							
+						  </div>
+						  <article id="rc">
+							  <header>
+								<span class="date">May 2018 - June 2018</span>
+								<h2 class="major">MT-LRS</h2>
+							</header>
+							<a href="images/mockup/mtlrs_mock.jpg" data-lightbox="mtlrs_mock"><img src="images/mockup/mtlrs_mock.jpg" class="image fit" ></a>
+
+							<p>An app that allows company employees to automatically badge-in and badge-out for their time logs based on user location. 
+								If user goes within the radius of the site location, app will automatically badge-in. If user goes away from the location for a few minutes, app will automatically badge-out the employee.  </p>
+							<i class="fa fa-desktop" aria-hidden="true"></i> <span class="title-bold">Tool / Tech / Language:</span>   Swift, CoreLocation, Git, Alamofire<br/>
+							
+							<i class="fa fa-code-fork" aria-hidden="true" ></i> <span class="title-bold">Contribution:</span> 100%
+							<ul>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Implemented entire app from scratch basing on an existing android implementation by client.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Report directly to project manager for project status and concerns.</li>
+							</ul>
+							<i class="fa fa-user" aria-hidden="true" ></i> <span class="title-bold">Member/s:</span> 1 &nbsp; &nbsp; <span class="title-bold">Role:</span> Developer<br/>
+							<a href="https://apps.apple.com/in/app/mt-lrs/id1389706184#?platform=iphone2"><i class="fa fa-apple" aria-hidden="true" ></i></a>
+						</article>
+						</div>
+					  </div>
+
+					<!-- EnSign -->
+					<div id="modal06" class="w3-modal">
+						<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:1000px; border-radius:10px">
+						  <div class="w3-center"><br>
+							<span onclick="document.getElementById('modal06').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+							
+						  </div>
+						  <article id="rc">
+							  <header>
+								<span class="date"Aug 2018 - September 2018</span>
+								<h2 class="major">EnSign</h2>
+							</header>
+							<a href="images/mockup/ensign_mock.jpg" data-lightbox="ensign_mock"><img src="images/mockup/ensign_mock.jpg" class="image fit" ></a>
+
+							<p>An iOS app for paperless document signing. Users can create their signatures within the application and use that to sign documents. 
+								App is able to take photo or upload an image of the document that needs to be signed. User can then add their signature to the document and import the signed document as an image or PDF.  </p>
+							<i class="fa fa-desktop" aria-hidden="true"></i> <span class="title-bold">Tool / Tech / Language:</span>   Swift, Git, Alamofire<br/>
+							
+							<i class="fa fa-code-fork" aria-hidden="true" ></i> <span class="title-bold">Contribution:</span> 100%
+							<ul>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Requirements Specification Analysis and Creation of Estimates. </li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Implemented entire application.</li>
+								<li><i class="fa fa fa-check-circle-o" aria-hidden="true" ></i> Report directly to project manager for project status and concerns.</li>
+							</ul>
+							<i class="fa fa-user" aria-hidden="true" ></i> <span class="title-bold">Member/s:</span> 1 &nbsp; &nbsp; <span class="title-bold">Role:</span> Developer<br/>
+							<a href="https://apps.apple.com/in/app/ennote-sign/id1434485910#?platform=iphone"><i class="fa fa-apple" aria-hidden="true" ></i></a>
+						</article>
+						</div>
+					  </div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -138,11 +353,11 @@
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(+632) 9498894339</a></p>
+								<p>(+632) 9498894339</p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">fernandez.mjm16@gmail.com</a></p>
+								<p>fernandez.mjm16@gmail.com</p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -156,7 +371,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
@@ -169,6 +384,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lightbox-plus-jquery.js"></script>
 
 	</body>
 </html>
