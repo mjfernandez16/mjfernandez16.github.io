@@ -3397,12 +3397,12 @@ input, select, textarea {
 				}
 
 		#intro h1 {
-			font-size: 5rem;
+			font-size: 3rem;
 			line-height: 1;
 		}
 
 		#intro p {
-			font-size: 1.25rem;
+			font-size: 1rem;
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
@@ -3485,7 +3485,7 @@ input, select, textarea {
 			}
 
 				#intro h1 {
-					font-size: 3.25rem;
+					font-size: 2.75rem;
 					line-height: 1.1;
 					margin-bottom: 1rem;
 				}
