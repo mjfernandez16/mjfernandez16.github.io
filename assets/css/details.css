@@ -130,11 +130,11 @@
             padding: 2.5rem 2.5rem 1.5rem 2.5rem ;
             max-width: 100%;
             opacity: 1;
-            text-align: justify;
+            text-align: left;
         }
     
         [id^='modal'] p, i {
-            text-align: justify;
+            text-align: left;
             /* margin-bottom: 1rem; */
             margin-top: 1rem;
             
@@ -160,7 +160,7 @@
     
     .title-bold {
         font-weight: bold;
-        text-align: justify;
+        text-align: left;
     }
 
     a[href] i{
