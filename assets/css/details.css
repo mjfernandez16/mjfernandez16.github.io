@@ -144,7 +144,10 @@
         text-align: center;
     }
 
-    i { display: inline-block; width: 20px; }
+    i { 
+        display: inline-block;
+        width: 30px; 
+    }
 
     article ul {
         padding-left: 3rem;
@@ -157,7 +160,13 @@
     
     .title-bold {
         font-weight: bold;
+        text-align: justify;
     }
+
     a[href] i{
         text-decoration: none;
+    }
+
+    article i {
+        text-align: left;
     }
